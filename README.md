@@ -1,2 +1,2 @@
 # codeHours
-Create a cli tool to compute worked/study hours
+Create a CLI tool to help me compute worked/study hours
