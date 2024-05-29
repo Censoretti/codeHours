@@ -1,5 +1,5 @@
 {
-  "name": "codehours",
+  "name": "counthours",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "codehours": "src/index.js"
+    "counthours": "src/index.js"
   },
   "keywords": [],
   "author": "",

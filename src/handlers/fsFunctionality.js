@@ -3,9 +3,11 @@ import fsc from "node:fs"
 
 let variablesData
 const dirName = "./src/data/variables.json"
+const sourceDir = "./src/data"
 
 export async function loadData() {
 	let data = {}
+	if (!fsc.existsSync((sourceDir))) await fs.mkdir(sourceDir)
 	if (!fsc.existsSync((dirName))) await fs.writeFile((dirName), JSON.stringify(data))
 	
 	try {
@@ -17,7 +19,6 @@ export async function loadData() {
 	}
 	
 	variablesData = variablesData != undefined ? variablesData : {}
-	console.log(variablesData);
 
 	return variablesData
 
