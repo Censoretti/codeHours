@@ -19,8 +19,10 @@ export async function loadData() {
 	variablesData = variablesData != undefined ? variablesData : {}
 	console.log(variablesData);
 
+	return variablesData
+
 }
 
 export async function saveData(data) {
-	await fs.writeFile(dirname, JSON.stringify(data))
+	await fs.writeFile(dirName, JSON.stringify(data))
 }
